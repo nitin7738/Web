@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nitin Kumar | Minecraft PvP</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #000000, #1a0000, #000000);
+      color: #ffffff;
+    }
+
+    /* SUBTLE BACKGROUND ANIMATION */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(255,0,0,0.15), transparent 70%);
+      animation: slowPulse 6s ease-in-out infinite;
+      z-index: -1;
+    }
+
+    @keyframes slowPulse {
+      0% { opacity: 0.4; }
+      50% { opacity: 0.8; }
+      100% { opacity: 0.4; }
+    }
+
+    header {
+      padding: 70px 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ff0000;
+      text-shadow: 0 0 15px rgba(255,0,0,0.8);
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #cccccc;
+      letter-spacing: 1px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .profile {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 40px;
+      align-items: center;
+      background: linear-gradient(145deg, #0d0d0d, #1a0000);
+      border: 1px solid rgba(255,0,0,0.4);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 40px rgba(255,0,0,0.25);
+    }
+
+    /* IMAGE PLACE */
+    .profile-img {
+      width: 100%;
+      height: 300px;
+      border-radius: 15px;
+      border: 2px dashed #ff0000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ff4444;
+      background: rgba(0,0,0,0.7);
+    }
+
+    .profile-text h2 {
+      color: #ff2a2a;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    .profile-text p {
+      line-height: 1.8;
+      color: #eeeeee;
+    }
+
+    .highlight {
+      color: #ff3333;
+      font-weight: 700;
+    }
+
+    .roles {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .role {
+      padding: 10px 18px;
+      border: 1px solid rgba(255,0,0,0.6);
+      border-radius: 30px;
+      background: rgba(0,0,0,0.6);
+      box-shadow: 0 0 15px rgba(255,0,0,0.3);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 30px 10px;
+      text-align: center;
+      color: #aaaaaa;
+      border-top: 1px solid rgba(255,0,0,0.3);
+    }
+
+    @media (max-width: 800px) {
+      .profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nitin Kumar</h1>
+    <p>PORTFOLIO</p>
+  </header>
+
+  <section>
+    <div class="profile">
+
+      <!-- IMAGE HERE -->
+      <div class="profile-img">
+        Your PNG Image Here
+      </div>
+
+      <!-- TEXT SIDE -->
+      <div class="profile-text">
+        <h2>About Me</h2>
+        <p>
+          My IGN is <span class="highlight">Nitin99_xD</span>. I am a competitive
+          <span class="highlight">Minecraft PvP player</span> ranked among
+          top-level fighters worldwide. I dominate high-skill PvP scenarios and
+          consistently perform at elite standards.
+          <br><br>
+          I am also the <span class="highlight">Owner of Nitro Host</span> and an
+          <span class="highlight">Average-level Coder</span> with experience in
+          Java, HTML, and CSS. I combine technical knowledge with hardcore PvP skills.
+        </p>
+
+        <div class="roles">
+          <div class="role">Minecraft PvPer</div>
+          <div class="role">Nitro Host Owner</div>
+          <div class="role">Coder</div>
+          <div class="role">Top Asian PvPer</div>
+        </div>
+      </div>
+
+    </div>
+      </div>
+  </section>
+
+  <!-- NITRO HOST SECTION -->
+  <section>
+    <div class="profile" style="margin-top:40px;">
+
+            <!-- IMAGE HERE -->
+      <div class="profile-img2">Nitro Host Image</div>
+
+      <div class="profile-text">
+        <h2>Nitro Host</h2>
+        <p>
+          <span class="highlight">Nitro Host</span> is my own hosting brand.
+          I sell <span class="highlight">Minecraft Servers</span>,
+          <span class="highlight">VPS</span>, and provide
+          <span class="highlight">Web Hosting</span> services.
+          <br><br>
+          My focus is on high performance, low latency, and stable servers
+          for gamers and developers who want reliable hosting solutions.
+        </p>
+
+        <div class="roles">
+          <div class="role">Minecraft Server Hosting</div>
+          <div class="role">VPS Services</div>
+          <div class="role">Web Hosting</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PVP ACHIEVEMENTS SECTION -->
+  <section>
+    <div class="profile" style="margin-top:40px;">
+
+      <div class="profile-text" style="grid-column:1 / -1;">
+        <h2>Minecraft PvP Achievements</h2>
+        <p>
+          I am ranked among top competitive PvP players with strong presence
+          in the Asian region and worldwide PvP communities.
+        </p>
+
+        <div class="roles">
+          <div class="role">Worldwide PvP Rank</div>
+          <div class="role">Asian PvP Tier</div>
+          <div class="role">High Skill Combat</div>
+        </div>
+
+                <!-- IMAGE SLOTS -->
+        <div class="roles" style="margin-top:30px; display:grid; grid-template-columns:repeat(2, 1fr); gap:20px;">
+          <div class="profile-img" style="height:200px;">PvPImage1</div>
+          <div class="profile-img" style="height:200px;">PvPImage2</div>
+      </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 | Nitin Kumar | All rights reserved 
+  </footer>
+
+</body>
+          </html>
